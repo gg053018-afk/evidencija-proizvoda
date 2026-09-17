@@ -4,7 +4,7 @@ Web aplikacija za evidenciju proizvoda, količine i rokova trajanja.
 
 ## Funkcionalnosti
 - Dodavanje proizvoda
-- Prikaz svih 
+- Prikaz svih proizvoda
 - Pretraga proizvoda
 - Izmjena proizvoda
 - Brisanje proizvoda
