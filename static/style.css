@@ -1,0 +1,62 @@
+body {
+    background-color: lightgray;
+    color: darkblue;
+}
+h1 {
+    text-align: center;
+    color: green;
+    font-size: 36px;
+}
+h2 {
+    color: red;
+    font-size: 24px;
+    text-align: left;
+    margin-left: 20px;
+}
+label {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+}
+input {
+    width: 300px;
+    padding: 8px;
+    margin: 5px 0px;
+    border-radius: 5px;
+}
+button {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: block;
+    margin-top: 5px;
+}
+form {
+    margin: 20px 0px;
+    padding: 15px;
+    border: 1px solid gray;
+    border-radius: 8px;
+    width: 340px;
+}
+p {
+    font-size: 18px;
+    color: black;
+    margin-left: 20px;
+}
+.upozorenje {
+    color: red;
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    border: 2px solid red;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+

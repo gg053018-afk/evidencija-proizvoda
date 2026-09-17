@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Evidencija proizvoda</title>
+<link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+<body>
+    
+<h1>Evidencija proizvoda</h1>
+    <p>{{ poruka }}</p>
+    <p>Dobro dosli u evidenciju proizvoda</p>
+    {% for poruka in upozorenje %}
+    <p class= "upozorenje">{{poruka}}</p> 
+    {% endfor %}
+
+<h2>Dodaj proizvod</h2>
+<form method="POST" action="">
+
+    <label>Naziv proizvoda:</label>
+    <input type="text" name="naziv_proizvoda" required>
+    <br>
+
+    <label>Broj komada:</label>
+    <input type="number" name="broj_komada" min="0" required>
+    <br>
+
+    <label>Rok trajanja:</label>
+    <input type="date" name="rok_trajanja" min="{{ danas }}" required>
+    <br>
+
+    <button type="submit" name="akcija" value="dodaj">Dodaj proizvod</button>
+</form>
+
+<h2>Prikazi stanje proizvoda</h2>
+<form method="POST" action="">
+    <button type="submit" name="akcija" value="prikazi">Prikazi stanje proizvoda</button>
+</form>
+{% for proizvod in proizvodi %}
+    <p>ID: {{ proizvod[0] }}</p>
+    <p>Naziv proizvoda: {{ proizvod[1] }}</p>
+    <p>Broj komada: {{ proizvod[2] }}</p>
+    <p>Rok trajanja: {{ proizvod[3] }}</p>
+{% endfor %}
+    
+
+
+
+<h2>Pretrazi proizvode</h2>
+<form method="POST" action="">
+
+    <label>Pronadji proizvod:</label>
+    <input type="text" name="pronadji_proizvod" required>
+    <br>
+    <button type="submit" name="akcija" value="pretrazi">Pretrazi proizvode</button>
+
+</form>
+<h2>Izmijeni proizvod</h2>
+<form method="POST" action="">
+    <label>Unesite naziv proizvoda koji želite izmijeniti:</label>
+    <input type="text" name="unesite_naziv" required>
+    <br>
+
+    <label>Naziv proizvoda:</label>
+    <input type="text" name="naziv_proizvoda" required>
+    <br>
+
+    <label>Broj komada:</label>
+    <input type="number" name="broj_komada" min="0" required>
+    <br>
+
+    <label>Rok trajanja:</label>
+    <input type="date" name="rok_trajanja" required>
+    <br>
+
+    <button type="submit" name="akcija" value="izmjeni">Sacuvati izmjene</button>
+</form>
+
+<h2>Obrisi proizvod</h2>
+<form method="POST" action="">
+
+    <label>ID proizvoda:</label>
+    <input type="number" name="id_proizvoda" min="1" required>
+    <button type="submit" name="akcija" value="obrisi">Obrisi proizvod</button>
+</form>
+
+</body>
+</html>
