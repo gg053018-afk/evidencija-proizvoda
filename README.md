@@ -2,6 +2,10 @@
 
 Web aplikacija za evidenciju proizvoda, količine i rokova trajanja.
 
+## Live Demo
+
+https://evidencija-proizvoda.onrender.com/
+
 ## Funkcionalnosti
 - Dodavanje proizvoda
 - Prikaz svih proizvoda
